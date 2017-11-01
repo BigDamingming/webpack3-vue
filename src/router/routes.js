@@ -6,5 +6,11 @@ export default [
     {
         path: '/framework',
         component: () => import('comp/framework'),
+        children: [
+            {
+                path: '/taobao',
+                component: () => import('comp/taobao'),
+            }
+        ]
     }
 ];
