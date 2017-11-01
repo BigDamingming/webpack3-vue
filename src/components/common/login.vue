@@ -126,6 +126,9 @@
                 background-color: #0096e6;
                 border-radius: 50px;
             }
+            button.disabled {
+                background-color: #cccccc;
+            }
         }
     }
 </style>
