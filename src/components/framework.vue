@@ -47,13 +47,8 @@
                             </div>
                         </li>
                         <li>
-                            <div class="icon-wrapper">
-                                <Icon type="aperture" size="18"></Icon>
-                            </div>
-                        </li>
-                        <li>
                             <div class="icon-wrapper" @click="handleSignout">
-                                <Icon type="battery-low" size="18"></Icon>
+                                <Icon type="log-out" size="18"></Icon>
                             </div>
                         </li>
                     </ul>
