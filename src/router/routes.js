@@ -5,12 +5,16 @@ export default [
     },
     {
         path: '/login',
-        component: () => import('comp/login'),
+        component: () => import('comp/common/login'),
     },
     {
         path: '/framework',
         component: () => import('comp/framework'),
         children: [
+            {
+                path: 'welcome',
+                component: () => import('comp/common/welcome'),
+            },
             {
                 path: 'taobao',
                 component: () => import('comp/a'),
