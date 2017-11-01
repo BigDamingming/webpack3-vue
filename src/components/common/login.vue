@@ -13,7 +13,7 @@
                         <input autocomplete="off" type="password" v-model="form.password" />
                     </li>
                 </ul>
-                <button>登录</button>
+                <button @click="handleSubmit">登录</button>
             </div>
         </div>
     </div>
