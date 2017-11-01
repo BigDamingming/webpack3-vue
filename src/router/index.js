@@ -9,22 +9,44 @@ export default fac.bind(new VueRouter({
 }))();
 
 
-// 工厂模式
+/**
+ * 工厂模式
+ */
 function fac() {
     return this.beforeEach(fun) && this;
 }
 
-// 路由回调
+
+/**
+ * 路由回调
+ */
 function fun(to, from, next) {
-    if (localStorage['auth'] || to.path.match('login')) {
-        return next();
-    }
-
-
-    next({
-        path: '/login',
-        query: {
-            redirect: to.fullPath
+    // 已认证
+    if (localStorage['auth']) {
+        if (to.path.match('login')) {
+            next({
+                path: '/',
+                query: {
+                    redirect: to.fullPath
+                }
+            });
         }
-    });
+        else {
+            next();
+        }
+    }
+    // 未认证
+    else {
+        if (to.path.match('login')) {
+            next();
+        }
+        else {
+            next({
+                path: '/login',
+                query: {
+                    redirect: to.fullPath
+                }
+            });
+        }
+    }
 }
