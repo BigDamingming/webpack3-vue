@@ -9,6 +9,7 @@ export default [
     },
     {
         path: '/framework',
+        redirect: '/framework/welcome',
         component: () => import('comp/framework'),
         children: [
             {
