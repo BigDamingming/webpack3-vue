@@ -108,6 +108,12 @@
                 },
             };
         },
+        methods: {
+            handleSignout() {
+                localStorage['auth'] = '';
+                location.reload();
+            }
+        }
     };
 </script>
 
