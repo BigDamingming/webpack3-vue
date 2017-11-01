@@ -19,7 +19,7 @@
                         <template slot="title">
                             <Icon type="ios-paper"></Icon>{{ sub.title }}
                         </template>
-                        <MenuItem v-for="(menu, key) in sub.child" :key="key" :name="'/framework' + menu.route">
+                        <MenuItem v-for="(menu, key) in sub.child" :key="key" :name="'/framework/' + menu.route">
                             {{ menu.title }}
                         </MenuItem>
                     </Submenu>
@@ -85,11 +85,11 @@
                         child: [
                             {
                                 title: '淘宝',
-                                route: '/taobao',
+                                route: 'taobao',
                             },
                             {
                                 title: '天猫',
-                                route: '/tmall',
+                                route: 'tmall',
                             }
                         ]
                     }, {
@@ -97,11 +97,11 @@
                         child: [
                             {
                                 title: '考拉海购',
-                                route: '/kaola',
+                                route: 'kaola',
                             },
                             {
                                 title: '网易新闻',
-                                route: '/news',
+                                route: 'news',
                             }
                         ]
                     }]
