@@ -123,11 +123,11 @@
                 cursor: pointer;
                 outline: none;
                 display: block;
-                width: 100%;
-                height: 48px;
+                width: 50%;
+                height: 40px;
                 margin: 30px auto 0;
                 color: #fff;
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: bolder;
                 background-color: #0096e6;
                 border-radius: 50px;
