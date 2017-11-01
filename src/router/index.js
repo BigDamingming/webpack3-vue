@@ -5,11 +5,16 @@ import routes from './routes';
 Vue.use(VueRouter);
 
 export default fac.bind(new VueRouter({
-    routes
+    routes,
 }))();
 
 
 // 工厂模式
 function fac() {
+    return this.beforeEach(fun) && this;
+}
 
+// 路由回调
+function fun(to, from, next) {
+    next();
 }
