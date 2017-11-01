@@ -41,7 +41,7 @@
         methods: {
             handleSubmit() {
                 if (form.user === 'admin' && form.password === '123456') {
-                    
+                    localStorage['auth'] = 'admin';
                 }
             }
         }
