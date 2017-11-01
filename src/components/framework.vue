@@ -19,7 +19,7 @@
                         <template slot="title">
                             <Icon type="ios-paper"></Icon>{{ sub.title }}
                         </template>
-                        <MenuItem v-for="(menu, key) in sub.child" :key="key" :name="menu.route">
+                        <MenuItem v-for="(menu, key) in sub.child" :key="key" :name="'/framework' + menu.route">
                             {{ menu.title }}
                         </MenuItem>
                     </Submenu>
