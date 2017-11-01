@@ -1,5 +1,9 @@
 export default [
     {
+        path: '/',
+        redirect: '/framework',
+    },
+    {
         path: '/login',
         component: () => import('comp/login'),
     },
