@@ -38,6 +38,10 @@
         background-color: rgba(0, 0, 0, .3);
         border-radius: 10px;
         transform: translate(-50%, -50%);
+        transition: all .3s;
+        &:hover {
+            background-color: rgba(0, 0, 0, .45);
+        }
         h3 {
             color: #fff;
             text-align: center;
