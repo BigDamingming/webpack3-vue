@@ -48,12 +48,12 @@
         left: 50%;
         width: 400px;
         padding: 20px 0 40px;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .5);
         border-radius: 10px;
         transform: translate(-50%, -50%);
         transition: all .3s;
         &:hover {
-            background-color: rgba(0, 0, 0, .45);
+            background-color: rgba(0, 0, 0, .7);
         }
         h3 {
             color: #fff;
