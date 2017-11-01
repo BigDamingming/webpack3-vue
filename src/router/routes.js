@@ -1,5 +1,9 @@
 export default [
     {
+        path: '/login',
+        component: () => import('comp/login'),
+    },
+    {
         path: '/taobao',
         component: () => import('comp/a'),
     },
