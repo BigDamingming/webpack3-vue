@@ -21,11 +21,20 @@
 
 <script>
     export default {
+        created() {
+            this.$Notice.open({
+                desc: `
+                    <p>账户: admin</p>
+                    <p>密码: 123456</p>
+                `,
+                duration: 0
+            });
+        },
         data() {
             return {
                 form: {
-                    user: '小虎牙',
-                    password: '小虎牙',
+                    user: '',
+                    password: '',
                 },
             }
         },
@@ -39,7 +48,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("https://file.iviewui.com/dist/0be950d65b2b6fc38c28a00ec4d5d829.jpg");
+        background-image: url("http://www.17sucai.com/preview/668095/2017-07-19/perfect/img/demo-1-bg.jpg");
     }
 
     .container {
