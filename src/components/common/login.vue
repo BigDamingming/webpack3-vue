@@ -6,11 +6,11 @@
                 <ul>
                     <li>
                         <span>账户:</span>
-                        <input autocomplete="off" type="text" v-model="form['user']" />
+                        <input autocomplete="off" type="text" v-model="form.user" />
                     </li>
                     <li>
                         <span>密码:</span>
-                        <input autocomplete="off" type="password" v-model="form['password']" />
+                        <input autocomplete="off" type="password" v-model="form.password" />
                     </li>
                 </ul>
                 <button>登录</button>
@@ -23,11 +23,11 @@
     export default {
         created() {
             this.$Notice.open({
+                duration: 0,
                 desc: `
                     <p>账户: admin</p>
                     <p>密码: 123456</p>
-                `,
-                duration: 0
+                `
             });
         },
         data() {
@@ -38,6 +38,13 @@
                 },
             }
         },
+        methods: {
+            handleSubmit() {
+                if (form.user === 'admin' && form.password === '123456') {
+                    
+                }
+            }
+        }
     };
 </script>
 
