@@ -13,7 +13,7 @@
                         <input autocomplete="off" type="password" v-model="form.password" />
                     </li>
                 </ul>
-                <button @click="handleSubmit">登录</button>
+                <button @click="handleSubmit(form)">登录</button>
             </div>
         </div>
     </div>
@@ -39,10 +39,8 @@
             }
         },
         methods: {
-            handleSubmit() {
-                if (this.form.user === 'admin' && this.form.password === '123456') {
-                    localStorage['auth'] = 'admin';
-                }
+            handleSubmit({ user, password }) {
+                
             }
         }
     };
