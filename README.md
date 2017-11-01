@@ -1,4 +1,4 @@
-# shell-vue
+# webpack.vue
 
 > A Vue.js project
 
