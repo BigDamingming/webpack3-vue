@@ -51,7 +51,7 @@
         background-color: rgba(0, 0, 0, .5);
         border-radius: 10px;
         transform: translate(-50%, -50%);
-        transition: all .3s;
+        transition: all .5s;
         &:hover {
             background-color: rgba(0, 0, 0, .7);
         }
