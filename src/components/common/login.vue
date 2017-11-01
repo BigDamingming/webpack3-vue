@@ -13,7 +13,7 @@
                         <input autocomplete="off" type="password" v-model="form.password" />
                     </li>
                 </ul>
-                <button @click="handleSubmit(form)">登录</button>
+                <button @click="handleSubmit">登录</button>
             </div>
         </div>
     </div>
@@ -39,9 +39,13 @@
             }
         },
         methods: {
-            handleSubmit({ user: u, password: p }) {
-                if (u === 'admin' && p === '123456') {
-                    
+            handleSubmit() {
+                if (this.form.user === 'admin' && this.form.password === '123456') {
+                    localStorage['auth'] = 'admin';
+                    location.reload();
+                }
+                else {
+                    this.$Message.error('对方不想说话，并且向你抛出了一个异常');
                 }
             }
         }
