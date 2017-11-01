@@ -133,6 +133,7 @@
                 border-radius: 50px;
             }
             button.disabled {
+                cursor: not-allowed;
                 background-color: #cccccc;
             }
         }
