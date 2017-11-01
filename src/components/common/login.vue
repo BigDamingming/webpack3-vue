@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="container">
-            <h3>欢迎你</h3>
+            <h3>小虎牙牌后台管理系统</h3>
             <div class="form-wrapper">
                 <ul>
                     <li>
@@ -68,6 +68,7 @@
                         color: #fff;
                         text-align: center;
                         font-weight: bolder;
+                        letter-spacing: 1px;
                     }
                     input {
                         border: 0;
