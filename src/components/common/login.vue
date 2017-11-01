@@ -48,6 +48,11 @@
                     this.$Message.error('对方不想说话，因为你故意输错的');
                 }
             }
+        },
+        computed: {
+            disabled() {
+                return Object.keys(this.form).every(key => this.form[key]);
+            }
         }
     };
 </script>
