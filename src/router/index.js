@@ -27,7 +27,7 @@ function fun(to, from, next) {
             next({
                 path: '/',
                 query: {
-                    redirect: to.fullPath
+                    // redirect: to.fullPath
                 }
             });
         }
