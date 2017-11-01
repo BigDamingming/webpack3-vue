@@ -16,5 +16,15 @@ function fac() {
 
 // 路由回调
 function fun(to, from, next) {
-    next();
+    if (localStorage['auth'] || to.path.match('login')) {
+        return next();
+    }
+
+
+    next({
+        path: '/login',
+        query: {
+            redirect: to.fullPath
+        }
+    });
 }
