@@ -9,6 +9,7 @@
         created() {
             this.$fetch({
                 url: '/123',
+                method: 'post'
             });
         },
         data() {

@@ -23,7 +23,7 @@ function fac(opt) {
  * 包装入参
  */
 function fun() {
-    return Object.assign(this.method && this.method.toLowerCase() === 'post' ? this.data || {} : this.params || {}, { auth: localStorage['auth'] }) && this;
+    return Object.assign(this.method && this.method.toLowerCase() === 'post' ? this.data || (this.data = {}) : this.params || (this.params = {}), { auth: localStorage['auth'] }) && this;
 }
 
 
