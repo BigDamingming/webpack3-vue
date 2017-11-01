@@ -6,11 +6,11 @@
                 <ul>
                     <li>
                         <span>账户:</span>
-                        <input autocomplete="off" type="text" />
+                        <input autocomplete="off" type="text" v-model="form['user']" />
                     </li>
                     <li>
                         <span>密码:</span>
-                        <input autocomplete="off" type="password" />
+                        <input autocomplete="off" type="password" v-model="form['password']" />
                     </li>
                 </ul>
                 <button>登录</button>
@@ -18,6 +18,19 @@
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                form: {
+                    user: '小虎牙',
+                    password: '小虎牙',
+                },
+            }
+        },
+    };
+</script>
 
 <style scoped lang="less">
     .wrapper {
