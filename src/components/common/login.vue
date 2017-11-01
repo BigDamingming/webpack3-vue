@@ -13,7 +13,7 @@
                         <input autocomplete="off" type="password" v-model="form.password" />
                     </li>
                 </ul>
-                <button @click="handleSubmit">登录</button>
+                <button :class="{ disabled }" @click="handleSubmit">登录</button>
             </div>
         </div>
     </div>
@@ -40,6 +40,7 @@
         },
         methods: {
             handleSubmit() {
+                if (this.disabled) return;
                 if (this.form.user === 'admin' && this.form.password === '123456') {
                     localStorage['auth'] = 'admin';
                     location.reload();
@@ -51,7 +52,7 @@
         },
         computed: {
             disabled() {
-                return Object.keys(this.form).every(key => this.form[key]);
+                return !Object.keys(this.form).every(key => this.form[key]);
             }
         }
     };
