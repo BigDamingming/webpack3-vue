@@ -14,7 +14,7 @@ export default {
 /**
  * 工厂模式
  */
-function fac(opt = {}) {
+function fac(opt) {
     this.$Loading.start() || axios.create({ timeout: 6e5 })(fun.call(opt)).then(({ data }) => suc.call(this, data, opt.suc)).catch(({ message }) => err.call(this, message, opt.err));
 }
 
@@ -23,7 +23,7 @@ function fac(opt = {}) {
  * 包装入参
  */
 function fun() {
-    return Object.assign(this.method.toLowerCase() === 'post' ? this.data : this.params, { auth: localStorage['auth'] }) && this;
+    return Object.assign(this.method && this.method.toLowerCase() === 'post' ? this.data : this.params, { auth: localStorage['auth'] }) && this;
 }
 
 
