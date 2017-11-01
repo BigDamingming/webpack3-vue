@@ -52,7 +52,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="icon-wrapper">
+                            <div class="icon-wrapper" @click="handleSignout">
                                 <Icon type="battery-low" size="18"></Icon>
                             </div>
                         </li>
