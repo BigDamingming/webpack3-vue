@@ -40,7 +40,9 @@
         },
         methods: {
             handleSubmit({ user: u, password: p }) {
-                
+                if (u === 'admin' && p === '123456') {
+                    
+                }
             }
         }
     };
