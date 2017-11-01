@@ -235,6 +235,7 @@
                     li {
                         float: left;
                         margin-left: 5px;
+                        cursor: pointer;
                         .name {
                             color: #000;
                             letter-spacing: 1px;
