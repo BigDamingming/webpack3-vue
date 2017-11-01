@@ -39,7 +39,7 @@
             }
         },
         methods: {
-            handleSubmit({ user, password }) {
+            handleSubmit({ user: u, password: p }) {
                 
             }
         }
