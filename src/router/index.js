@@ -44,7 +44,7 @@ function fun(to, from, next) {
             next({
                 path: '/login',
                 query: {
-                    redirect: to.fullPath
+                    // redirect: to.fullPath
                 }
             });
         }
