@@ -45,7 +45,7 @@
                     location.reload();
                 }
                 else {
-                    this.$Message.error('对方不想说话，并且向你抛出了一个异常');
+                    this.$Message.error('对方不想说话，因为你故意输错的');
                 }
             }
         }
