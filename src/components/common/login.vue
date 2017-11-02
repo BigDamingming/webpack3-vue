@@ -1,8 +1,8 @@
 <template>
     <div class="wrapper">
         <div class="container">
-            <h3>小虎牙牌后台管理系统</h3>
-            <div class="form-wrapper">
+            <h3>小虎牙管理系统</h3>
+            <div class="form-wrapper" @keyup.enter="handleSubmit">
                 <ul>
                     <li>
                         <span>账户:</span>
@@ -98,7 +98,7 @@
                     box-shadow: 0 0 0 2px #000;
                     margin-top: 20px;
                     font-size: 14px;
-                    line-height: 46px;
+                    line-height: 43px;
                     border-radius: 4px;
                     overflow: hidden;
                     span {
