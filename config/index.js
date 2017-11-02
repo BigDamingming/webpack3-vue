@@ -33,6 +33,7 @@ module.exports = {
         assetsPublicPath: '/',
         proxyTable: {
             '/mock': 'http://www.easy-mock.com/mock/59f2c44bceada932107472cd',
+            '/weather': 'http://api.map.baidu.com/telematics/v3/weather',
         },
         // CSS Sourcemaps off by default because relative paths are "buggy"
         // with this option, according to the CSS-Loader README
