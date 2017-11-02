@@ -48,7 +48,9 @@
                         </li>
                         <li>
                             <div class="icon-wrapper" @click="handleSignout">
-                                <Icon type="log-out" size="18"></Icon>
+                                <Tooltip content="退出" placement="bottom">
+                                    <Icon type="log-out" size="18"></Icon>
+                                </Tooltip>
                             </div>
                         </li>
                     </ul>
