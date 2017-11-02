@@ -114,7 +114,9 @@
                         cursor: pointer;
                         outline: none;
                         width: 250px;
-                        text-indent: 10px;
+                        text-indent: 15px;
+                        letter-spacing: 1px;
+                        border-radius: 50px;
                     }
                 }
             }
