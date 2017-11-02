@@ -236,7 +236,7 @@
                     }
                     li {
                         float: left;
-                        margin-left: 5px;
+                        margin-left: 10px;
                         cursor: pointer;
                         .name {
                             color: #000;
